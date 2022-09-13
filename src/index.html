@@ -3,12 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>Cinema-Collection</title>
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet"
+  />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+/>
   </head>
-  <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+  <body class="page">
+    <section class="section header">
+      <header>
+        <div class="container header__container">
+          <a class="logo-header" href="./index.html">
+            <svg class="logo-header__icon" width="24" height="24">
+              <use href="./images/sprite.svg#icon-logo"></use>
+            </svg>
+            <span class="logo-web">Filmoteka</span>
+            <form class="search-form" id="search-form">
+              <input class="search-input"
+                type="text"
+                name="searchQuery"
+                autocomplete="off"
+                placeholder="Что ищем?"
+              />
+              <button type="submit" class="search-submit">
+                <svg class="logo-header__icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-search"></use>
+                </svg>
+              </button>
+            </form>
+        
+
+          </a>
+
+
+          <!-- <a href="./index.html" class="logo-header">
+            <span class="logo-web">Web</span>Studio
+          </a> -->
+
+        </div>
+      </header>
+    </section>
+
+    
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
