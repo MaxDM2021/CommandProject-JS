@@ -2,8 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cinema-Collection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="./sass/index.scss" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -13,231 +16,269 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+
   </head>
+
+  
   <body class="page">
-    <!-- HEADER -->
+
+<!-- HEADER -->
+
     <section class="section header">
       <header>
         <div class="container header__container">
           <div class="logo__nav">
-          <div class="logo">
-            <a class="logo-header" href="./index.html">
-              <svg class="logo-header__icon" width="24" height="24">
-                <use href="./images/sprite.svg#icon-logo"></use>
+            <div class="logo">
+              <a class="logo-header" href="./index.html">
+                <svg class="logo-header__icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-logo"></use>
+                </svg>
+                <p class="logo-web">Filmoteka</p>
+              </a>
+            </div>
+            <nav class="site-nav">
+              <ul class="site-nav-header">
+                <li class="site-nav-header__item">
+                  <a href="./index.html" class="site-nav-header__link current"
+                    >HOME</a
+                  >
+                </li>
+                <li class="site-nav-header__item">
+                  <a href="./my-library.html" class="site-nav-header__link"
+                    >MY LIBRARY</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <form class="search-form" id="search-form">
+            <div class="form-field">
+              <input
+                class="search-input"
+                type="text"
+                name="searchQuery"
+                autocomplete="off"
+                placeholder="Movie search"
+              />
+              <svg class="icon-search" width="12" height="12">
+                <use href="./images/sprite.svg#icon-search"></use>
               </svg>
-              <span class="logo-web">Filmoteka</span>
-            </a>
-          </div>
-          <nav class="site-nav">
-            <ul class="site-nav-header">
-              <li class="site-nav-header__item">
-                <a href="./index.html" class="site-nav-header__link current">HOME</a>
-              </li>
-              <li class="site-nav-header__item">
-                <a href="./my-library.html" class="site-nav-header__link">MY LIBRARY</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-
-        <form class="search-form" id="search-form">
-          <div class="form-field">
-            <input
-              class="search-input"
-              type="text"
-              name="searchQuery"
-              autocomplete="off"
-              placeholder="Movie search"
-            />
-            <svg class="icon-search" width="12" height="12">
-              <use href="./images/sprite.svg#icon-search"></use>
-            </svg>
-          </div>
-          <div class="seach-line"></div>
-        </form>
-
+            </div>
+            <div class="seach-line"></div>
+          </form>
         </div>
       </header>
     </section>
 
-   
-
-    <!-- HEADER END-->
+   <!-- HEADER-END -->
     <!-- GALARY -->
+
     <main>
       <section class="section galary">
         <div class="container galary">
-        <ul class="galary-list">
-          <li class="galary-list__item">
-            <a href="" class="galary-list-link-wrapper link">
-             <div class="galary-list-item-wraper">
-             <picture>
-              <source 
-              srcset="./images/default.jpg"
-              media="(min-width: 1280)"
-              type="image"
-              />
-              <source 
-              srcset="./images/default.jpg"
-              media="(min-width: 768)"
-              type="image"
-              />
-              <source 
-              srcset="./images/default.jpg"
-              media="(min-width: 320)"
-              type="image"
-              />
-              <img
-              src="./images/default.jpg"
-              alt="galary"
-              class="galary-list-item-img"
-            />
-            </picture>
-            <div class="film-data first" >
-              <p class="films-name">Афоня</p>
-              <p class="films-genre">Комедия, Мелодрамма, Other | 2022</p>
-            </div>
-            </div>
-            </a>
-          </li>
-          <li class="galary-list__item">
-            <a href="" class="galary-list-link-wrapper link">
-             <div class="galary-list-item-wraper">
-             <picture>
-              <source 
-              srcset="./images/default.jpg"
-              media="(min-width: 1280)"
-              type="image"
-              />
-              <source 
-              srcset="./images/default.jpg"
-              media="(min-width: 768)"
-              type="image"
-              />
-              <source 
-              srcset="./images/default.jpg"
-              media="(min-width: 320)"
-              type="image"
-              />
-              <img
-              src="./images/default.jpg"
-              alt="galary"
-              class="galary-list-item-img"
-            />
-            </picture>
-            <div class="film-data" >
-              <p class="films-name">Афоня</p>
-              <p class="films-genre">Комедия, Мелодрамма, Other | 2022</p>
-            </div>
-            </div>
-            </a>
-          </li>
-          <li class="galary-list__item">
-            <a href="" class="galary-list-link-wrapper link">
-             <div class="galary-list-item-wraper">
-             <picture>
-              <source 
-              srcset="./images/default.jpg"
-              media="(min-width: 1280)"
-              type="image"
-              />
-              <source 
-              srcset="./images/default.jpg"
-              media="(min-width: 768)"
-              type="image"
-              />
-              <source 
-              srcset="./images/default.jpg"
-              media="(min-width: 320)"
-              type="image"
-              />
-              <img
-              src="./images/default.jpg"
-              alt="galary"
-              class="galary-list-item-img"
-            />
-            </picture>
-            <div class="film-data" >
-              <p class="films-name">Афоня</p>
-              <p class="films-genre">Комедия, Мелодрамма, Other | 2022 </p>
-            </div>
-            </div>
-            </a>
-          </li>
-          <li class="galary-list__item">
-            <a href="" class="galary-list-link-wrapper link">
-             <div class="galary-list-item-wraper">
-             <picture>
-              <source 
-              srcset="./images/default.jpg"
-              media="(min-width: 1280)"
-              type="image"
-              />
-              <source 
-              srcset="./images/default.jpg"
-              media="(min-width: 768)"
-              type="image"
-              />
-              <source 
-              srcset="./images/default.jpg"
-              media="(min-width: 320)"
-              type="image"
-              />
-              <img
-              src="./images/default.jpg"
-              alt="galary"
-              class="galary-list-item-img"
-            />
-            </picture>
-            <div class="film-data" >
-              <p class="films-name">Афоня</p>
-              <p class="films-genre">Комедия, Мелодрамма, Other | 2022</p>
-            </div>
-            </div>
-            </a>
-          </li>
-          <li class="galary-list__item">
-            <a href="" class="galary-list-link-wrapper link">
-             <div class="galary-list-item-wraper">
-             <picture>
-              <source 
-              srcset="./images/default.jpg"
-              media="(min-width: 1280)"
-              type="image"
-              />
-              <source 
-              srcset="./images/default.jpg"
-              media="(min-width: 768)"
-              type="image"
-              />
-              <source 
-              srcset="./images/default.jpg"
-              media="(min-width: 320)"
-              type="image"
-              />
-              <img
-              src="./images/default.jpg"
-              alt="galary"
-              class="galary-list-item-img"
-            />
-            </picture>
-            <div class="film-data" >
-              <p class="films-name">Афоня</p>
-              <p class="films-genre">Комедия, Мелодрамма, Other | 2022</p>
-            </div>
-            </div>
-            </a>
-          </li>
-        </ul>
-      </div>
+          <ul class="galary-list">
+            <li class="galary-list__item">
+              <a  data-modal-open href="" class="galary-list-link-wrapper">
+                <div class="galary-list-item-wraper">
+                  <picture>
+                    <source
+                      srcset="./images/default.jpg"
+                      media="(min-width: 1280)"
+                      type="image"
+                    />
+                    <source
+                      srcset="./images/default.jpg"
+                      media="(min-width: 768)"
+                      type="image"
+                    />
+                    <source
+                      srcset="./images/default.jpg"
+                      media="(min-width: 320)"
+                      type="image"
+                    />
+                    <img  
+                      src="./images/default.jpg"
+                      alt="galary"
+                      class="galary-list-item-img"
+                    />
+                  </picture>
+                  <div class="film-data first">
+                    <p class="films-name">Афоня</p>
+                    <div class="film-data-wraper">
+                      <p class="films-genre">
+                        Комедия, Мелодрамма, Other | 2022
+                      </p>
+                      <p class="film-rating">150</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="galary-list__item">
+              <a href="" class="galary-list-link-wrapper link">
+                <div class="galary-list-item-wraper">
+                  <picture>
+                    <source
+                      srcset="./images/default.jpg"
+                      media="(min-width: 1280)"
+                      type="image"
+                    />
+                    <source
+                      srcset="./images/default.jpg"
+                      media="(min-width: 768)"
+                      type="image"
+                    />
+                    <source
+                      srcset="./images/default.jpg"
+                      media="(min-width: 320)"
+                      type="image"
+                    />
+                    <img
+                      src="./images/default.jpg"
+                      alt="galary"
+                      class="galary-list-item-img"
+                    />
+                  </picture>
+                  <div class="film-data">
+                    <p class="films-name">Афоня</p>
+                    <div class="film-data-wraper">
+                      <p class="films-genre">
+                        Комедия, Мелодрамма, Other | 2022
+                      </p>
+                      <p class="film-rating">150</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="galary-list__item">
+              <a href="" class="galary-list-link-wrapper link">
+                <div class="galary-list-item-wraper">
+                  <picture>
+                    <source
+                      srcset="./images/default.jpg"
+                      media="(min-width: 1280)"
+                      type="image"
+                    />
+                    <source
+                      srcset="./images/default.jpg"
+                      media="(min-width: 768)"
+                      type="image"
+                    />
+                    <source
+                      srcset="./images/default.jpg"
+                      media="(min-width: 320)"
+                      type="image"
+                    />
+                    <img
+                      src="./images/default.jpg"
+                      alt="galary"
+                      class="galary-list-item-img"
+                    />
+                  </picture>
+                  <div class="film-data">
+                    <p class="films-name">Афоня</p>
+                    <div class="film-data-wraper">
+                      <p class="films-genre">
+                        Комедия, Мелодрамма, Other | 2022
+                      </p>
+                      <p class="film-rating">150</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="galary-list__item">
+              <a href="" class="galary-list-link-wrapper link">
+                <div class="galary-list-item-wraper">
+                  <picture>
+                    <source
+                      srcset="./images/default.jpg"
+                      media="(min-width: 1280)"
+                      type="image"
+                    />
+                    <source
+                      srcset="./images/default.jpg"
+                      media="(min-width: 768)"
+                      type="image"
+                    />
+                    <source
+                      srcset="./images/default.jpg"
+                      media="(min-width: 320)"
+                      type="image"
+                    />
+                    <img
+                      src="./images/default.jpg"
+                      alt="galary"
+                      class="galary-list-item-img"
+                    />
+                  </picture>
+                  <div class="film-data">
+                    <p class="films-name">Афоня</p>
+                    <div class="film-data-wraper">
+                      <p class="films-genre">
+                        Комедия, Мелодрамма, Other | 2022
+                      </p>
+                      <p class="film-rating">150</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="galary-list__item">
+              <a href="" class="galary-list-link-wrapper link">
+                <div class="galary-list-item-wraper">
+                  <picture>
+                    <source
+                      srcset="./images/default.jpg"
+                      media="(min-width: 1280)"
+                      type="image"
+                    />
+                    <source
+                      srcset="./images/default.jpg"
+                      media="(min-width: 768)"
+                      type="image"
+                    />
+                    <source
+                      srcset="./images/default.jpg"
+                      media="(min-width: 320)"
+                      type="image"
+                    />
+                    <img
+                      src="./images/default.jpg"
+                      alt="galary"
+                      class="galary-list-item-img"
+                    />
+                  </picture>
+                  <div class="film-data">
+                    <p class="films-name">Афоня</p>
+                    <div class="film-data-wraper">
+                      <p class="films-genre">
+                        Комедия, Мелодрамма, Other | 2022
+                      </p>
+                      <p class="film-rating">150</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
+    <!-- GALARY END -->
+    <!-- PAGES -->
+
     <section class="section pages">
       <div class="container pages">
-      <p>Cчетчик!!!</p>
+        <p>Cчетчик!!!</p>
       </div>
     </section>
+
+    <!-- PAGES END-->
+    <!-- FOOTER -->
 
     <footer class="footer">
       <div class="section footer">
@@ -254,11 +295,77 @@
       </div>
     </footer>
 
-    <script type="module" src="./index.js"></script>
+    <!-- FOOTER END -->
+    <!-- MODAL WINDOW-->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <a data-modal-close href="" class="link-close">
+          <svg class="icon-close" with="18" height="18">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </a>
+        <form class="speaker-form" method="POST" autocomplete="off"></form>
+        <picture>
+          <source
+            srcset="./images/default.jpg"
+            media="(min-width: 1280)"
+            type="image"
+          />
+          <source
+            srcset="./images/default.jpg"
+            media="(min-width: 768)"
+            type="image"
+          />
+          <source
+            srcset="./images/default.jpg"
+            media="(min-width: 320)"
+            type="image"
+          />
+          <img class="modal-image" src="./images/default.jpg" alt="galary"  />
+        </picture>
+        <h2 class="modal-title">My dreams</h2>
+        <table class="modal-data-box">
+          <tr>
+            <td class="modal-data">Vote / Votes</td>
+            <td class="modal-data-value">
+              <span class="modal-rating">7.3</span>/ <span class="modal-rating-two">1260</span> 
+            </td>
+          </tr>
+          <tr>
+            <td class="modal-data">Popularity</td>
+            <td class="modal-data-value">100.2</td>
+          </tr>
+          <tr>
+            <td class="modal-data">Original Title</td>
+            <td class="modal-data-value">A FISTFUL OF LEAD</td>
+          </tr>
+          <tr>
+            <td class="modal-data">Genre</td>
+            <td class="modal-data-value">Western</td>
+          </tr>
+        </table>
+        <h3 class="modal-title-about">ABOUT</h3>
+        <p class="modal-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          facilis ea minus eum nihil modi officia perspiciatis delectus
+          voluptatum perferendis, tempora tenetur a sequi eaque dolore
+          blanditiis asperiores saepe voluptatibus?
+        </p>
+        <div class="md-modal-buttons">
+          <button class="md-button swich-on" type="button">Add to watch</button>
+          <button class="md-button" type="button">Add to queue</button>
+        </div>
+      
+      </div>
+    </div>
+
+    <!-- MODAL WINDOW-END -->
+
+    
   </body>
+  <script src="./modal.js" type="modul"></script>
 </html>
-
-
 
 <!-- 
 <li class="galary-list__item">

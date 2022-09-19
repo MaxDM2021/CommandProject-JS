@@ -25,7 +25,7 @@
 
   .header-buttons {
     display: flex;
-  justify-content: center;
+    justify-content: center;
   }
 
 
@@ -77,6 +77,7 @@ position: absolute;
   transform: translateY(-50%);
 
   fill:#ffffff;
+  background-color: transparent;
 
 }
 
@@ -158,8 +159,11 @@ position: absolute;
 
 
   .logo-web {
-    display:contents
+    display:contents;
+    background-color: green;
+    fill: #ffffff;
   }
+
 
   // .header__container{
   //   padding: 40px 34px;
@@ -194,6 +198,17 @@ position: absolute;
     padding: 40px 34px;
   }
 
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-header__icon {
+    fill: green;
+    color: green;
+    background-color: transparent;
+  }
+
   .search-form{
     width: 394px;
   }
@@ -202,4 +217,6 @@ position: absolute;
   .seach-line {
     width: 394px;
   }
+
+
 }

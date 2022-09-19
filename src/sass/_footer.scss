@@ -1,6 +1,7 @@
 
 .section.footer {
     height: 77;
+    background-color:  #F7F7F7;
 }
 
 .container.footer {
@@ -8,6 +9,8 @@
     flex-wrap: wrap;
 justify-content: center;
 align-items: center;
+padding-top: 30px;
+padding-bottom: 30px;
 }
 
 .coperite {
