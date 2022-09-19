@@ -283,7 +283,7 @@
             <use href="./images/sprite.svg#icon-love"></use>
           </svg>
           <p class="coperite">
-            by&nbsp<a class="coperite" href="">GoIT Students</a>
+            by&nbsp<a data-modal-open-two class="coperite" href="">GoIT Students</a>
           </p>
         </div>
       </div>
@@ -292,7 +292,7 @@
     <!-- FOOTER END -->
     <!-- MODAL WINDOW-->
 
-    <div class="backdrop is-hidden" data-modal>
+    <div data-modal class="backdrop is-hidden" >
       <div class="modal">
         <a data-modal-close href="" class="link-close">
           <svg class="icon-close" with="18" height="18">
@@ -364,7 +364,99 @@
 
     <!-- MODAL WINDOW-END -->
 
+  <!-- MODAL WINDOW-TEAM -->
+
+
+  <div data-modal-two class="backdrop is-hidden">
+    <div class="modal-dev">
+      <a data-modal-close-two href="" class="link-close">
+        <svg class="icon-close" with="18" height="18">
+          <use href="./images/sprite.svg#icon-close"></use>
+        </svg>
+      </a>
+      <ul class="list-developers">
+         <li class="developer-item">
+           <picture>
+           <source
+          srcset="./images/default.jpg"
+          media="(min-width: 1280)"
+          type="image"
+          />
+          <source
+          srcset="./images/default.jpg"
+          media="(min-width: 768)"
+          type="image"
+        />
+        <source
+          srcset="./images/default.jpg"
+          media="(min-width: 320)"
+          type="image"
+        />
+        <img class="photo-dev" src="./images/default.jpg" alt="galary" />
+        </picture>
+        <div class="modal-data-box">
+        <h2 class="name-developer">Piter Ivanoff</h2>
+        <h3 class="type-work">Development: HTML/CSS</h3>
+        </div>
+      </li>
+      <li class="developer-item">
+        <picture>
+         <source
+         srcset="./images/default.jpg"
+          media="(min-width: 1280)"
+          type="image"
+         />
+          <source
+          srcset="./images/default.jpg"
+          media="(min-width: 768)"
+          type="image"
+          />
+         <source
+          srcset="./images/default.jpg"
+          media="(min-width: 320)"
+          type="image"
+          />
+          <img class="photo-dev" src="./images/default.jpg" alt="galary" />
+        </picture>
+        <div class="modal-data-box">
+          <h2 class="name-developer">Piter Ivanoff</h2>
+          <h3 class="type-work">Development of HTML/CSS</h3>
+        </div>
+      </li>
+      <li class="developer-item">
+        <picture>
+         <source
+         srcset="./images/default.jpg"
+          media="(min-width: 1280)"
+          type="image"
+         />
+          <source
+          srcset="./images/default.jpg"
+          media="(min-width: 768)"
+          type="image"
+          />
+         <source
+          srcset="./images/default.jpg"
+          media="(min-width: 320)"
+          type="image"
+          />
+          <img class="photo-dev" src="./images/default.jpg" alt="galary" />
+        </picture>
+        <div class="modal-data-box">
+          <h2 class="name-developer">Piter Ivanoff</h2>
+          <h3 class="type-work">Development of HTML/CSS</h3>
+        </div>
+      </li>
+    </ul>
+  </div>
+  </div>
+
+
+
+
+
     <script src="./modal.js" type="modul"></script>
+    <script src="./modal-developers.js" type="modul"></script>
   </body>
 </html>
 

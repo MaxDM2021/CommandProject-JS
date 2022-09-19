@@ -67,7 +67,8 @@
 }
 
 
-.modal-image {
+.modal-image,
+.photo-dev {
   width: 240px;
   height: auto;
   border-radius: 5px;
@@ -168,6 +169,7 @@
     margin-bottom: 0;
   }
 
+
   .modal-data-box {
     width: 264px;
     margin: 0;
@@ -201,8 +203,6 @@
 
   .modal-data-box {
     width: 391px;
-   
-  
   }
 
   .modal-title{
