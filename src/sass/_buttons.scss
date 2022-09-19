@@ -42,7 +42,6 @@
   
   }
 
-
   .md-button {
     display: inline-block;
     width: 110px;
@@ -95,10 +94,22 @@
 
 
   
-  //====0-767==== 
-  
-  // @media screen and (max-width: 767px) {
-  //   .button {
-  //     margin: 0;
-  //   }
-  // }
+ // ===768+====
+
+@media screen and (min-width: 768px) {
+
+  .md-button {
+    width: auto;
+ padding-left: 20px;
+ padding-right: 20px;
+    &.swich-on {
+      width: auto;
+      padding: 10px 13px;
+  }
+
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+
+}
+}
