@@ -1,2 +1,0 @@
-!function(){var e;(e={openModalBtn:document.querySelector("[data-modal-open]"),closeModalBtn:document.querySelector("[data-modal-close]"),modal:document.querySelector("[data-modal]")}).openModalBtn.addEventListener("click",(function(){e.modal.classList.remove("is-hidden")})),e.closeModalBtn.addEventListener("click",(function(){e.modal.classList.add("is-hidden")}))}();
-//# sourceMappingURL=my-library.fac9ce04.js.map
