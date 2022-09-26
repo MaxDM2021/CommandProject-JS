@@ -28,22 +28,23 @@ html {
 
 
   
-  ul,
+  ul, 
+  li,
+  ol,
   address {
     list-style: none;
     padding: 0;
     margin: 0;
   }
-  
 
-  
   .section {
     margin-bottom: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
   }
 
-  img {
+  img,
+  picture {
     display: block;
     // max-width: 100%;
     height: auto;
@@ -63,13 +64,5 @@ html {
     
   }
   
-   ul, li,
-  ol
-   {
-      padding: 0;
-      margin: 0;
-  list-style: none;
-  
-  
-  }
+ 
   

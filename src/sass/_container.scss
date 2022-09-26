@@ -1,7 +1,10 @@
-.container {
+.container,
+.container-dev{
   margin: 0 auto;
   
 }
+
+
 
 // 320+
 @media screen and (min-width: 320px) {
@@ -12,6 +15,14 @@
     // margin-right: auto;
     // outline: 2px solid tomato;
   }
+
+  .container-dev {
+    display: block;
+    width: 240px;
+    // outline: 2px solid tomato;
+  }
+
+
 }
 
 // 768+
@@ -29,6 +40,13 @@
   
   }
 
+.container-dev {
+  display: block;
+  width: 549px;
+  // outline: 2px solid tomato;
+}
+
+
 }
 
 // 1200+
@@ -40,8 +58,25 @@
     // outline: 2px solid tomato;
 
   }
+
+  .container-dev {
+    display: block;
+    width: 833px;
+    // outline: 2px solid tomato;
+  }
+
+
 }
 
+
+@media screen and (min-width: 1200px){
+   
+  .container-dev {
+    display: block;
+    width: 833px;
+    // outline: 2px solid tomato;
+  }
+}
 
 
 
